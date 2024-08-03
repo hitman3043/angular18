@@ -1,0 +1,27 @@
+<h2 class="text-center">
+
+  <div class="myArena">
+    <button (click)="showMessage('Welcome To Angular')">Welcome</button><br/>
+    <input type="text" [(ngModel)]="courseName"><br/>
+    <h3 >{{ courseName }}</h3><br/>
+    <p class="text-center">{{ courseName }}</p><br/>
+    <input type="checkbox" [(ngModel)]="isIndia"><label>Check Me</label><br/>
+    <select [(ngModel)]="isState" class="form-control">
+      <option value="">Select State</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="surat">Surat</option>
+      <option value="pune">Pune</option>
+      <option value="delhi">Delhi</option>
+    </select>
+
+  <button (click)="showMe()" [class]="successClass">Show Me</button>
+    <button (click)="hideMe()" [class]="warningClass">Hide Me</button>
+
+  </div>
+
+  <div *ngIf="isIndia" class="showhide">
+    <p>Show Me Text</p>
+    <p>Hide Me Text</p>
+
+  </div>
+</h2>
