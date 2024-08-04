@@ -19,21 +19,21 @@
       </div>
     </div>
     <div class="col-md-3 col-lg-3">
-      <div [class]="makerec" id="div3">
+      <div *ngIf="num1 === num2" [class]="makerec" id="div3">
         Div 3
       </div>
       <div class="flex mt-4 center">
-        <input type="text" class="form-control" placeholder="num1">
-        <input type="text" class="form-control" placeholder="num2">
+        <input type="text" [(ngModel)]="num1" class="form-control" placeholder="num1">
+        <input type="text" [(ngModel)]="num2" class="form-control" placeholder="num2">
       </div>
     </div>
     <div class="col-md-3 col-lg-3">
-      <div [class]="makerec" id="div4">
+      <div *ngIf="selectedState=='mumbai'" [class]="makerec" id="div4">
         Div 4
       </div>
       <div class="flex mt-4">
-        <input type="checkbox">
-       <select class="form-control">
+        <input [(ngModel)]="isActive" type="checkbox">
+       <select [(ngModel)]="selectedState" class="form-control">
         <option value="">Select</option>
         <option value="mumbai">Mumbai</option>
         <option value="surat">Surat</option>
@@ -42,3 +42,16 @@
     </div>
   </div>
 </div>
+
+<!---For Loop-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <ul>
+        <li *ngFor="let item of allname">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--For Loop-->

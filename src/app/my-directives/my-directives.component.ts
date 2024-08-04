@@ -15,6 +15,14 @@ export class MyDirectivesComponent {
   isToggle:boolean=true;
   isShowDiv:boolean=true;
 
+  num1:string='';
+  num2:string='';
+
+  isActive:boolean=true;
+  selectedState:string="";
+
+  allname:string[]=["Abhishek","Yogesh","Manish","Taklu"];
+
 
   constructor(){
 
