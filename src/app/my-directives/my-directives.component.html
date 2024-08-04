@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-3 col-lg-3">
+      <div  *ngIf="isShow" [class]="makerec" id="div1">
+          Div 1
+      </div>
+      <div class="flex mt-4 center">
+        <button (click)="hideMe()" class="btn btn-danger">Hide</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button (click)="showMe()" class="btn btn-primary">Show</button>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3">
+      <div *ngIf="isToggle" [class]="makerec" id="div2">
+        Div 2
+      </div>
+      <div class="flex mt-4 center">
+        <button (click)="toggleMe()" class="btn btn-success">Toggle</button>
+
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3">
+      <div [class]="makerec" id="div3">
+        Div 3
+      </div>
+      <div class="flex mt-4 center">
+        <input type="text" class="form-control" placeholder="num1">
+        <input type="text" class="form-control" placeholder="num2">
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3">
+      <div [class]="makerec" id="div4">
+        Div 4
+      </div>
+      <div class="flex mt-4">
+        <input type="checkbox">
+       <select class="form-control">
+        <option value="">Select</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="surat">Surat</option>
+       </select>
+      </div>
+    </div>
+  </div>
+</div>

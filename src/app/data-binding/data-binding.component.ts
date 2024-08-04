@@ -33,14 +33,8 @@ export class DataBindingComponent {
     this.courseName=this.nextCourse
    }
 
-   showMe(){
-this.isIndia=true;
-
-   }
-
-
-   hideMe(){
-    this.isIndia=false;
+   toggleMe(){
+    this.isIndia =! this.isIndia
    }
 
 
