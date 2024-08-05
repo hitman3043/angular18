@@ -50,6 +50,13 @@
       <ul>
         <li *ngFor="let item of allname">{{ item }}</li>
       </ul>
+      <div class="mylist">
+        <select name="studlist" placeholder="Get listing">
+        <option *ngFor="let stud of structuredList" value="{{ stud.id }}">
+         {{ stud.name }}
+        </option>
+      </select><br/>
+      </div>
     </div>
   </div>
 </div>

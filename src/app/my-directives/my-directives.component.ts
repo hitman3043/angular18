@@ -22,7 +22,12 @@ export class MyDirectivesComponent {
   selectedState:string="";
 
   allname:string[]=["Abhishek","Yogesh","Manish","Taklu"];
-
+  structuredList:any[]=[
+    {id:1,name:"Yogesh",age:34,sex:"m",isActive:false},
+    {id:2,name:"rohit",age:36,sex:"m",isActive:true},
+    {id:3,name:"mohit",age:32,sex:"m",isActive:false},
+    {id:4,name:"kuldeep",age:35,sex:"m",isActive:false},
+  ]
 
   constructor(){
 
